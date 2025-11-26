@@ -1,0 +1,75 @@
+name: pchr
+description: "PCHR APP"
+
+publish_to: 'none'
+
+version: 1.0.0+2
+
+environment:
+  sdk: ^3.6.0-267.0.dev
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  google_fonts: ^6.3.2
+  image_picker: ^1.2.1
+  file_picker: ^10.3.7
+  provider: ^6.1.5+1
+  fl_chart: ^1.1.1
+  dropdown_button2: ^2.3.9
+  intl: ^0.20.2
+  package_info_plus: ^8.3.1
+  flutter_map: ^8.2.2
+  geolocator: ^14.0.2
+  latlong2: ^0.9.1
+  http: ^1.6.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.5
+  url_launcher: ^6.3.2
+  pusher_channels_flutter: ^2.5.0
+  flutter_native_splash: ^2.4.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  hive_generator: ^2.0.1
+  build_runner: ^2.3.3
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/lang/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icons/logo.png"
+  min_sdk_android: 21 
+
+flutter_native_splash:
+  color: "#ffffff"               
+  image: "assets/icons/logo.png" 
+  ios: true                      
+  android: false                 
+  fullscreen: true               
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
