@@ -29,6 +29,7 @@ Future<Locale> getCurrentLocale(BuildContext context) async {
     languageBox.get('language_code', defaultValue: 'en'),
     languageBox.get('country_code', defaultValue: 'US'),
   );
+  
   await context.setLocale(locale, true);
   return locale;
 }
