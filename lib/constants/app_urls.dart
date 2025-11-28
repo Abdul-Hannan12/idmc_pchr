@@ -1,4 +1,4 @@
-const String baseUrl = 'https://pchr.dectuple.net/api';
+const String baseUrl = 'https://portal.journalist-alert.com/api';
 // const String baseUrl = 'http://192.168.100.17:8000/api';
 
 String url(String endpoint) {
