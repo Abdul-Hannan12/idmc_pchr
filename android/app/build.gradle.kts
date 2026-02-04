@@ -15,7 +15,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.fewsols.pchr"
+    namespace = "info.abdulhannan.idmf.idmf_pchr"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
