@@ -68,6 +68,7 @@ class AuthTextfield extends StatelessWidget {
                         ? null
                         : context.tr("enter_valid_username");
                   case AuthFieldType.phoneNumber:
+                    return null;
                     final bool isValidnumber =
                         value != null && value.isNotEmpty;
                     return isValidnumber
