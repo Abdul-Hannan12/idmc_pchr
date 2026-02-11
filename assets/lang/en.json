@@ -134,5 +134,6 @@
     "apply": "Apply",
     "request_support_to_update_profile": "Request support to update profile",
     "reset_password": "Reset Password",
-    "privacy_policy": "Privacy Policy"
+    "privacy_policy": "Privacy Policy",
+    "delete_account": "Delete Account"
 }

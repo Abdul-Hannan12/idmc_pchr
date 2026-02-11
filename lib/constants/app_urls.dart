@@ -12,6 +12,7 @@ String nonApiUrl(String endpoint) {
 // AUTH
 String signupApiUrl = url("/register");
 String loginApiUrl = url("/login");
+String deleteAccountApiUrl(String id) => url("/delete/account/$id");
 String registerStepTwoApiUrl = url("/register-step-2");
 String forgotPasswordApiUrl = url("/forgot-password");
 String resetPasswordApiUrl = url("/reset-password");

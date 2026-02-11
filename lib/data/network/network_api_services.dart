@@ -138,4 +138,30 @@ class NetworkApiServices extends BaseApiServices {
         throw GeneralException('${response.statusCode}');
     }
   }
+
+  @override
+  Future<dynamic> deleteApi(String url, {bool? isAuth, String? token}) async {
+    dynamic responseJson;
+    try {
+      final response = await http.delete(
+        Uri.parse(url),
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+          "Authorization": isAuth ?? false ? "Bearer $token" : "",
+        },
+      ).timeout(
+        const Duration(seconds: 20),
+      );
+      responseJson = returnResponse(response);
+    } on SocketException {
+      throw InternetException(
+        'Please ensure your device is connected to the internet and try again',
+      );
+    } on TimeoutException {
+      throw RequestTimedOutException('Server took too long to respond');
+    }
+
+    return responseJson;
+  }
 }

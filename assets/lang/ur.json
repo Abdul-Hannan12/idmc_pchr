@@ -133,5 +133,8 @@
     "apply": "لگائیں",
     "request_support_to_update_profile": "پروفائل کو اپ ڈیٹ کرنے کے لیے معاونت کی درخواست کریں",
     "reset_password": "پاس ورڈ ری سیٹ کریں",
-    "privacy_policy": "پرائیویسی پالیسی"
+    "privacy_policy": "پرائیویسی پالیسی",
+    "delete_account": "اکاؤنٹ حذف کریں",
+    "delete_account_confirmation": "کیا آپ واقعی اپنا اکاؤنٹ حذف کرنا چاہتے ہیں؟ یہ عمل ناقابل واپسی ہے۔",
+    "cancel": "منسوخ کریں"
 }
